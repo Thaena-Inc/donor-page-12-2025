@@ -4,6 +4,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import { Button } from "@/components/ui/button";
 
 export default function Index() {
   return (
@@ -16,14 +17,23 @@ export default function Index() {
       />
 
       <div className="relative z-10 flex flex-col">
-        <section className="flex items-center justify-center px-4 sm:px-6 lg:px-8 py-24">
+        <section
+          className="flex items-center justify-center px-4 sm:px-6 lg:px-8 py-24"
+          style={{
+            backgroundImage: 'url(https://cdn.builder.io/api/v1/image/assets%2F2698fec9a90e4b17b35971f30190927b%2F659f0658f3e14691afa882f15cc56b9c)',
+            backgroundRepeat: 'no-repeat',
+            backgroundPosition: 'center',
+            backgroundSize: 'cover',
+            backgroundColor: 'rgba(39, 91, 82, 0.2)'
+          }}
+        >
           <div className="w-full max-w-[1024px] mx-auto">
             <div className="flex flex-col items-center gap-5 text-center">
               <h1 className="font-playfair text-4xl sm:text-5xl lg:text-[60px] font-normal leading-tight lg:leading-[60px] tracking-[-0.025em] lg:tracking-[-1.5px] text-teal-green">
                 Our Donors
               </h1>
 
-              <div className="flex flex-col items-center gap-2.5 max-w-full">
+              <div className="flex flex-col items-center gap-2.5 max-w-full pb-3">
                 <p className="font-roboto text-lg sm:text-xl leading-7 font-normal text-slate-text">
                   Thaena relies on exceptionally healthy, carefully screened microbiome donors. Every bottle of ThaenaBiotic® starts with our donors, whose rare biology helps us advance microbiome science and create safe, human-derived postbiotics.
                 </p>
@@ -32,6 +42,10 @@ export default function Index() {
                   This donor program is built on a simple belief: Humans Healing Humans.
                 </p>
               </div>
+
+              <Button className="h-14 px-8 rounded-[10px] bg-[#A66890] hover:bg-[#A66890]/90 text-cream font-roboto text-lg font-medium whitespace-nowrap">
+                Apply to be a Donor
+              </Button>
             </div>
           </div>
         </section>
@@ -408,6 +422,42 @@ export default function Index() {
                   </AccordionItem>
                 </Accordion>
               </div>
+            </div>
+          </div>
+        </section>
+
+        <section
+          className="flex items-center justify-center px-4 sm:px-6 lg:px-8 py-24"
+          style={{
+            backgroundColor: 'rgba(167, 179, 167, 0.3)',
+            backgroundImage: 'url(https://cdn.builder.io/api/v1/image/assets%2F2698fec9a90e4b17b35971f30190927b%2F0f9e0ab4aa2a42918497078428853d07)',
+            backgroundRepeat: 'no-repeat',
+            backgroundPosition: 'center',
+            backgroundSize: 'cover'
+          }}
+        >
+          <div className="w-full max-w-[786px] mx-auto">
+            <div className="flex flex-col items-center justify-center gap-6">
+              <div className="w-full">
+                <h2 className="font-playfair text-3xl sm:text-4xl lg:text-[48px] font-normal leading-tight lg:leading-[48px] tracking-[-0.025em] lg:tracking-[-1.2px] text-teal-green text-center">
+                  Think You Might Be a Good Fit?
+                </h2>
+              </div>
+
+              <div className="w-full">
+                <p className="font-roboto text-xl sm:text-2xl lg:text-[28px] leading-[1.16] font-normal text-slate-text text-center">
+                  Begin your donor application and learn whether you qualify.
+                </p>
+              </div>
+
+              <Button
+                className="h-14 px-8 rounded-[10px] bg-[#A66890] hover:bg-[#A66890]/90 text-cream font-roboto text-lg font-medium shadow-lg"
+                style={{
+                  boxShadow: '0 10px 15px -3px rgba(0, 0, 0, 0.10), 0 4px 6px -4px rgba(0, 0, 0, 0.10)'
+                }}
+              >
+                Join Our Donor Program
+              </Button>
             </div>
           </div>
         </section>
